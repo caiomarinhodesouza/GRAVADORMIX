@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qualidade do áudio"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupQuality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioAlta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alta"/>
+
+                <RadioButton
+                    android:id="@+id/radioPadrao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Padrão"/>
+
+                <RadioButton
+                    android:id="@+id/radioBaixa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Baixa"/>
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Formato de gravação"
+                android:textSize="18sp"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupFormat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioM4A"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M4A"/>
+
+                <RadioButton
+                    android:id="@+id/radioWAV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WAV"/>
+
+                <RadioButton
+                    android:id="@+id/radioAAC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AAC"/>
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/checkKeepScreenOn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manter a tela ativada durante a gravação"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
